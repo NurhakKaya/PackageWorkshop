@@ -12,6 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 		DemoImage.PNG = DemoImage.PNG
 		DevNotes.txt = DevNotes.txt
 		NurhakFirstUmbracoPackage.PNG = NurhakFirstUmbracoPackage.PNG
+		umbpack options.png = umbpack options.png
+		umbpack package creation.png = umbpack package creation.png
+		umbpack reason to use.PNG = umbpack reason to use.PNG
 	EndProjectSection
 EndProject
 Global

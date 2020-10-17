@@ -893,3 +893,235 @@ Branch main set up to track remote branch main from origin.
 
 Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
 $
+
+
+
+**** umbpack to create packages easily from command prompt ****
+**** in order to push the changes, a key needs to be generated for the package and this is generated from https://our.umbraco.com/member/profile/packages/ and after hitting API Keys button on the package ****
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>e:
+
+E:\>cd git\repos\PackageWorkshop
+
+E:\git\repos\PackageWorkshop>umbpack pack -h
+
+                        888
+                        888
+888   888 88888b.d88b.  88888b.  888d888 8888b.   .d8888b  .d88b.
+888   888 888 "888 "88b 888 "88b 888P"      "88b d88P"    d88""88b
+888   888 888  888  888 888  888 888    .d888888 888      888  888
+Y88   88Y 888  888  888 888 d88P 888    888  888 Y88b.    Y88..88P
+ "Y888P"  888  888  888 88888P"  888    "Y888888  "Y8888P  "Y88P"
+
+------------------------------------------------------------------
+
+UmbPack 0.9.5
+Copyright (C) 2020 The Umbraco Community
+
+  o, OutputDirectory      (Default: .) Specified the directory the created
+                          package will be saved to
+
+  v, Version              Override the version defined in the package.xml file
+
+  n, PackageFileName      An explicit file name to give the generated package
+                          file
+
+  file/folder (pos. 0)    Required. The package.xml file or folder you want to
+                          create your package from
+
+
+For more information see
+https://our.umbraco.com/documentation/Extending/Packages/UmbPack
+
+E:\git\repos\PackageWorkshop>umbpack -h
+
+                        888
+                        888
+888   888 88888b.d88b.  88888b.  888d888 8888b.   .d8888b  .d88b.
+888   888 888 "888 "88b 888 "88b 888P"      "88b d88P"    d88""88b
+888   888 888  888  888 888  888 888    .d888888 888      888  888
+Y88   88Y 888  888  888 888 d88P 888    888  888 Y88b.    Y88..88P
+ "Y888P"  888  888  888 88888P"  888    "Y888888  "Y8888P  "Y88P"
+
+------------------------------------------------------------------
+
+UmbPack 0.9.5
+Copyright (C) 2020 The Umbraco Community
+
+  pack    Create an Umbraco package from a folder or existing package.xml file
+
+  push    Push an Umbraco package to our.umbraco.com
+
+  init    Initializes a new package.xml file from provided defaults
+
+
+For more information see
+https://our.umbraco.com/documentation/Extending/Packages/UmbPack
+
+E:\git\repos\PackageWorkshop>umbpack pack -h
+
+                        888
+                        888
+888   888 88888b.d88b.  88888b.  888d888 8888b.   .d8888b  .d88b.
+888   888 888 "888 "88b 888 "88b 888P"      "88b d88P"    d88""88b
+888   888 888  888  888 888  888 888    .d888888 888      888  888
+Y88   88Y 888  888  888 888 d88P 888    888  888 Y88b.    Y88..88P
+ "Y888P"  888  888  888 88888P"  888    "Y888888  "Y8888P  "Y88P"
+
+------------------------------------------------------------------
+
+UmbPack 0.9.5
+Copyright (C) 2020 The Umbraco Community
+
+  o, OutputDirectory      (Default: .) Specified the directory the created
+                          package will be saved to
+
+  v, Version              Override the version defined in the package.xml file
+
+  n, PackageFileName      An explicit file name to give the generated package
+                          file
+
+  file/folder (pos. 0)    Required. The package.xml file or folder you want to
+                          create your package from
+
+
+For more information see
+https://our.umbraco.com/documentation/Extending/Packages/UmbPack
+
+E:\git\repos\PackageWorkshop>umbpack -pack .\package.xml
+
+                        888
+                        888
+888   888 88888b.d88b.  88888b.  888d888 8888b.   .d8888b  .d88b.
+888   888 888 "888 "88b 888 "88b 888P"      "88b d88P"    d88""88b
+888   888 888  888  888 888  888 888    .d888888 888      888  888
+Y88   88Y 888  888  888 888 d88P 888    888  888 Y88b.    Y88..88P
+ "Y888P"  888  888  888 88888P"  888    "Y888888  "Y8888P  "Y88P"
+
+------------------------------------------------------------------
+
+UmbPack 0.9.5
+Copyright (C) 2020 The Umbraco Community
+
+  pack    Create an Umbraco package from a folder or existing package.xml file
+
+  push    Push an Umbraco package to our.umbraco.com
+
+  init    Initializes a new package.xml file from provided defaults
+
+
+For more information see
+https://our.umbraco.com/documentation/Extending/Packages/UmbPack
+
+E:\git\repos\PackageWorkshop>umbpack pack -h
+
+                        888
+                        888
+888   888 88888b.d88b.  88888b.  888d888 8888b.   .d8888b  .d88b.
+888   888 888 "888 "88b 888 "88b 888P"      "88b d88P"    d88""88b
+888   888 888  888  888 888  888 888    .d888888 888      888  888
+Y88   88Y 888  888  888 888 d88P 888    888  888 Y88b.    Y88..88P
+ "Y888P"  888  888  888 88888P"  888    "Y888888  "Y8888P  "Y88P"
+
+------------------------------------------------------------------
+
+UmbPack 0.9.5
+Copyright (C) 2020 The Umbraco Community
+
+  o, OutputDirectory      (Default: .) Specified the directory the created
+                          package will be saved to
+
+  v, Version              Override the version defined in the package.xml file
+
+  n, PackageFileName      An explicit file name to give the generated package
+                          file
+
+  file/folder (pos. 0)    Required. The package.xml file or folder you want to
+                          create your package from
+
+
+For more information see
+https://our.umbraco.com/documentation/Extending/Packages/UmbPack
+
+E:\git\repos\PackageWorkshop>umbpack pack .\package.xml
+Building package from package.xml
+ - Loading Package File: .\package.xml
+ - Updating package version
+ - Getting Package Name
+ - Adding files to package
+    - Adding Folder: src\PackageWorkshop\App_Plugins\PackageWorkshop
+    - Adding: package.manifest to App_Plugins\PackageWorkshop
+    - Adding: Dashboard\dashboard.html to App_Plugins\PackageWorkshop
+    - Adding: Dashboard\dashboardController.js to App_Plugins\PackageWorkshop
+    - Adding: Dashboard\dashboardService.js to App_Plugins\PackageWorkshop
+    - Adding: Dashboard\package.manifest to App_Plugins\PackageWorkshop
+    - Adding: Dashboard\Lang\en.xml to App_Plugins\PackageWorkshop
+    - Adding: src\PackageWorkshop\bin\output\PackageWorkshop.dll to bin\PackageWorkshop.dll
+ - Building package
+ - Saving Package to .\PackageWorkshop_1.0.0.zip
+Complete
+
+E:\git\repos\PackageWorkshop>umbpack pack .\package.xml -v 2.0.0
+Building package from package.xml
+ - Loading Package File: .\package.xml
+ - Updating package version
+ - Getting Package Name
+ - Adding files to package
+    - Adding Folder: src\PackageWorkshop\App_Plugins\PackageWorkshop
+    - Adding: package.manifest to App_Plugins\PackageWorkshop
+    - Adding: Dashboard\dashboard.html to App_Plugins\PackageWorkshop
+    - Adding: Dashboard\dashboardController.js to App_Plugins\PackageWorkshop
+    - Adding: Dashboard\dashboardService.js to App_Plugins\PackageWorkshop
+    - Adding: Dashboard\package.manifest to App_Plugins\PackageWorkshop
+    - Adding: Dashboard\Lang\en.xml to App_Plugins\PackageWorkshop
+    - Adding: src\PackageWorkshop\bin\output\PackageWorkshop.dll to bin\PackageWorkshop.dll
+ - Building package
+ - Saving Package to .\PackageWorkshop_2.0.0.zip
+Complete
+
+E:\git\repos\PackageWorkshop>umbpack push -h
+
+                        888
+                        888
+888   888 88888b.d88b.  88888b.  888d888 8888b.   .d8888b  .d88b.
+888   888 888 "888 "88b 888 "88b 888P"      "88b d88P"    d88""88b
+888   888 888  888  888 888  888 888    .d888888 888      888  888
+Y88   88Y 888  888  888 888 d88P 888    888  888 Y88b.    Y88..88P
+ "Y888P"  888  888  888 88888P"  888    "Y888888  "Y8888P  "Y88P"
+
+------------------------------------------------------------------
+
+UmbPack 0.9.5
+Copyright (C) 2020 The Umbraco Community
+
+  k, Key                  Api Key to use
+
+  c, Current              (Default: true) Make this package the current package
+                          file
+
+  DotNetVersion           (Default: 4.7.2) Change the required DotNetVersion for
+                          the package
+
+  w, WorksWith            (Default: v850) Compatible Umbraco versions (in the
+                          form v850,v840,v830)
+
+  a, Archive              One or more wildcard patterns to match against
+                          existing package files to be archived
+
+  package.zip (pos. 0)    Required. Path to the package.zip you wish to push
+
+
+For more information see
+https://our.umbraco.com/documentation/Extending/Packages/UmbPack
+
+E:\git\repos\PackageWorkshop>umbpack push .\PackageWorkshop_2.0.0.zip -k 284879-155475-7C5657C6945A89B8F41DCB08E984639A129D15D0FA0D4D482AD4A6E7B2657483
+Extracting info from package.xml file
+Name: PackageWorkshop
+Version: 2.0.0
+
+Uploading PackageWorkshop_2.0.0.zip to our.umbraco.com ...
+The package 'PackageWorkshop_2.0.0.zip' was successfully uploaded to our.umbraco.com
+
+E:\git\repos\PackageWorkshop>
