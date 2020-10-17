@@ -1,0 +1,895 @@
+PackageWorkshop setup: https://jmayntzhusen.github.io/PackageWorkshop/set-up
+PackageWorkshop: https://jmayntzhusen.github.io/PackageWorkshop/index
+Umbraco add package url: https://our.umbraco.com/member/profile/packages/
+
+Other useful links;
+https://github.com/umbraco/Umbraco.Packages/projects/4
+https://github.com/umbraco/Umbraco.Packages/issues
+https://github.com/umbraco/OurUmbraco/issues
+
+
+
+**** Command Promt changes ****
+
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>git --version
+git version 2.10.2.windows.1
+
+C:\Windows\system32>umbpack -v
+'umbpack' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Windows\system32>dotnet tool update umbpack --global
+
+Welcome to .NET Core 3.1!
+---------------------
+SDK Version: 3.1.402
+
+Telemetry
+---------
+The .NET Core tools collect usage data in order to help us improve your experience. The data is anonymous. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+----------------
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Find out what's new: https://aka.ms/dotnet-whats-new
+Learn about the installed HTTPS developer cert: https://aka.ms/aspnet-core-https
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+Write your first app: https://aka.ms/first-net-core-app
+--------------------------------------------------------------------------------------
+C:\Program Files\dotnet\sdk\3.1.402\NuGet.targets(128,5): error : Unable to load the service index for source https://pkgs.dev.azure.com/felinesoft/_packaging/Felinesoft-Master-Feed@Local/nuget/v3/index.json. [C:\Users\Nurhak.Kaya\AppData\Local\Temp\iqwm0o3r.3tm\restore.csproj]
+C:\Program Files\dotnet\sdk\3.1.402\NuGet.targets(128,5): error :   Response status code does not indicate success: 401 (Unauthorized). [C:\Users\Nurhak.Kaya\AppData\Local\Temp\iqwm0o3r.3tm\restore.csproj]
+Tool 'umbpack' failed to update due to the following:
+The tool package could not be restored.
+Tool 'umbpack' failed to install. This failure may have been caused by:
+
+* You are attempting to install a preview release and did not use the --version option to specify the version.
+* A package by this name was found, but it was not a .NET Core tool.
+* The required NuGet feed cannot be accessed, perhaps because of an Internet connection problem.
+* You mistyped the name of the tool.
+
+For more reasons, including package naming enforcement, visit https://aka.ms/failure-installing-tool
+
+C:\Windows\system32>dotnet tool install --global Umbraco.Tools.Packages --version "0.9.*"
+C:\Program Files\dotnet\sdk\3.1.402\NuGet.targets(128,5): error : Unable to load the service index for source https://pkgs.dev.azure.com/felinesoft/_packaging/Felinesoft-Master-Feed@Local/nuget/v3/index.json. [C:\Users\Nurhak.Kaya\AppData\Local\Temp\kqzvg1hr.zsa\restore.csproj]
+C:\Program Files\dotnet\sdk\3.1.402\NuGet.targets(128,5): error :   Response status code does not indicate success: 401 (Unauthorized). [C:\Users\Nurhak.Kaya\AppData\Local\Temp\kqzvg1hr.zsa\restore.csproj]
+The tool package could not be restored.
+Tool 'umbraco.tools.packages' failed to install. This failure may have been caused by:
+
+* You are attempting to install a preview release and did not use the --version option to specify the version.
+* A package by this name was found, but it was not a .NET Core tool.
+* The required NuGet feed cannot be accessed, perhaps because of an Internet connection problem.
+* You mistyped the name of the tool.
+
+For more reasons, including package naming enforcement, visit https://aka.ms/failure-installing-tool
+
+C:\Windows\system32>umbpack -v
+'umbpack' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Windows\system32>dotnet tool update umbpack --global
+C:\Program Files\dotnet\sdk\3.1.402\NuGet.targets(128,5): error : Unable to load the service index for source https://pkgs.dev.azure.com/felinesoft/_packaging/Felinesoft-Master-Feed@Local/nuget/v3/index.json. [C:\Users\Nurhak.Kaya\AppData\Local\Temp\zfo1iist.4kt\restore.csproj]
+C:\Program Files\dotnet\sdk\3.1.402\NuGet.targets(128,5): error :   Response status code does not indicate success: 401 (Unauthorized). [C:\Users\Nurhak.Kaya\AppData\Local\Temp\zfo1iist.4kt\restore.csproj]
+Tool 'umbpack' failed to update due to the following:
+The tool package could not be restored.
+Tool 'umbpack' failed to install. This failure may have been caused by:
+
+* You are attempting to install a preview release and did not use the --version option to specify the version.
+* A package by this name was found, but it was not a .NET Core tool.
+* The required NuGet feed cannot be accessed, perhaps because of an Internet connection problem.
+* You mistyped the name of the tool.
+
+For more reasons, including package naming enforcement, visit https://aka.ms/failure-installing-tool
+
+C:\Windows\system32>dotnet tool install --global Umbraco.Tools.Packages --version "0.9.*"
+C:\Program Files\dotnet\sdk\3.1.402\NuGet.targets(128,5): error : Unable to load the service index for source https://pkgs.dev.azure.com/felinesoft/_packaging/Felinesoft-Master-Feed@Local/nuget/v3/index.json. [C:\Users\Nurhak.Kaya\AppData\Local\Temp\rulubwlv.b5m\restore.csproj]
+C:\Program Files\dotnet\sdk\3.1.402\NuGet.targets(128,5): error :   Response status code does not indicate success: 401 (Unauthorized). [C:\Users\Nurhak.Kaya\AppData\Local\Temp\rulubwlv.b5m\restore.csproj]
+The tool package could not be restored.
+Tool 'umbraco.tools.packages' failed to install. This failure may have been caused by:
+
+* You are attempting to install a preview release and did not use the --version option to specify the version.
+* A package by this name was found, but it was not a .NET Core tool.
+* The required NuGet feed cannot be accessed, perhaps because of an Internet connection problem.
+* You mistyped the name of the tool.
+
+For more reasons, including package naming enforcement, visit https://aka.ms/failure-installing-tool
+
+C:\Windows\system32>dotnet tool install --global Umbraco.Tools.Packages --version "0.9.5"
+C:\Program Files\dotnet\sdk\3.1.402\NuGet.targets(128,5): error : Unable to load the service index for source https://pkgs.dev.azure.com/felinesoft/_packaging/Felinesoft-Master-Feed@Local/nuget/v3/index.json. [C:\Users\Nurhak.Kaya\AppData\Local\Temp\hdlknrtk.fcj\restore.csproj]
+C:\Program Files\dotnet\sdk\3.1.402\NuGet.targets(128,5): error :   Response status code does not indicate success: 401 (Unauthorized). [C:\Users\Nurhak.Kaya\AppData\Local\Temp\hdlknrtk.fcj\restore.csproj]
+The tool package could not be restored.
+Tool 'umbraco.tools.packages' failed to install. This failure may have been caused by:
+
+* You are attempting to install a preview release and did not use the --version option to specify the version.
+* A package by this name was found, but it was not a .NET Core tool.
+* The required NuGet feed cannot be accessed, perhaps because of an Internet connection problem.
+* You mistyped the name of the tool.
+
+For more reasons, including package naming enforcement, visit https://aka.ms/failure-installing-tool
+
+C:\Windows\system32>dotnet tool install --global Umbraco.Tools.Packages --version "0.9.*"
+You can invoke the tool using the following command: UmbPack
+Tool 'umbraco.tools.packages' (version '0.9.5') was successfully installed.
+
+C:\Windows\system32>dotnet new -u
+Getting ready...
+Template Instantiation Commands for .NET Core CLI
+
+Currently installed items:
+  Microsoft.DotNet.Common.ProjectTemplates.3.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.3.1
+      Version: 3.1.8
+      Author: Microsoft
+    Templates:
+      Class library (classlib) C#
+      Class library (classlib) F#
+      Class library (classlib) VB
+      Console Application (console) C#
+      Console Application (console) F#
+      Console Application (console) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ProjectTemplates.3.1
+
+  Microsoft.DotNet.Common.ProjectTemplates.2.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.2.1
+      Version: 1.0.2-beta3
+      Author: Microsoft
+    Templates:
+      Class library (classlib) C#
+      Class library (classlib) F#
+      Class library (classlib) VB
+      Console Application (console) C#
+      Console Application (console) F#
+      Console Application (console) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ProjectTemplates.2.1
+
+  Microsoft.DotNet.Test.ProjectTemplates.2.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Test.ProjectTemplates.2.1
+      Version: 1.0.2-beta4.20105.2
+      Author: Microsoft
+    Templates:
+      Unit Test Project (mstest) C#
+      Unit Test Project (mstest) F#
+      Unit Test Project (mstest) VB
+      xUnit Test Project (xunit) C#
+      xUnit Test Project (xunit) F#
+      xUnit Test Project (xunit) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Test.ProjectTemplates.2.1
+
+  Microsoft.DotNet.Web.ProjectTemplates.3.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Web.ProjectTemplates.3.1
+      Version: 3.1.8
+      Author: Microsoft
+    Templates:
+      Blazor Server App (blazorserver) C#
+      ASP.NET Core Empty (web) C#
+      ASP.NET Core Empty (web) F#
+      ASP.NET Core gRPC Service (grpc) C#
+      Razor Class Library (razorclasslib) C#
+      ASP.NET Core Web App (webapp) C#
+      ASP.NET Core Web App (Model-View-Controller) (mvc) C#
+      ASP.NET Core Web App (Model-View-Controller) (mvc) F#
+      ASP.NET Core Web API (webapi) C#
+      ASP.NET Core Web API (webapi) F#
+      Worker Service (worker) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Web.ProjectTemplates.3.1
+
+  Microsoft.DotNet.Web.ProjectTemplates.2.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Web.ProjectTemplates.2.1
+      Version: 2.1.14
+      Author: Microsoft
+    Templates:
+      ASP.NET Core Empty (web) C#
+      ASP.NET Core Empty (web) F#
+      Razor Class Library (razorclasslib) C#
+      ASP.NET Core Web App (razor) C#
+      ASP.NET Core Web App (Model-View-Controller) (mvc) C#
+      ASP.NET Core Web App (Model-View-Controller) (mvc) F#
+      ASP.NET Core Web API (webapi) C#
+      ASP.NET Core Web API (webapi) F#
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Web.ProjectTemplates.2.1
+
+  Microsoft.DotNet.Web.Spa.ProjectTemplates.2.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Web.Spa.ProjectTemplates.2.1
+      Version: 2.1.14
+      Author: Microsoft
+    Templates:
+      ASP.NET Core with Angular (angular) C#
+      ASP.NET Core with React.js (react) C#
+      ASP.NET Core with React.js and Redux (reactredux) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Web.Spa.ProjectTemplates.2.1
+
+  Microsoft.AspNetCore.Components.WebAssembly.Templates
+    Details:
+      NuGetPackageId: Microsoft.AspNetCore.Components.WebAssembly.Templates
+      Version: 3.2.1
+      Author: Microsoft
+    Templates:
+      Blazor WebAssembly App (blazorwasm) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.AspNetCore.Components.WebAssembly.Templates
+
+  Microsoft.DotNet.Common.ItemTemplates
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ItemTemplates
+      Version: 3.1.8
+      Author: Microsoft
+    Templates:
+      dotnet gitignore file (gitignore)
+      global.json file (globaljson)
+      NuGet Config (nugetconfig)
+      Solution File (sln)
+      Dotnet local tool manifest file (tool-manifest)
+      Web Config (webconfig)
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ItemTemplates
+
+  Microsoft.DotNet.Test.ProjectTemplates.3.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Test.ProjectTemplates.3.1
+      Version: 1.0.2-beta4.20176.1
+      Author: Microsoft
+    Templates:
+      Unit Test Project (mstest) C#
+      Unit Test Project (mstest) F#
+      Unit Test Project (mstest) VB
+      xUnit Test Project (xunit) C#
+      xUnit Test Project (xunit) F#
+      xUnit Test Project (xunit) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Test.ProjectTemplates.3.1
+
+  Microsoft.DotNet.Web.ItemTemplates
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Web.ItemTemplates
+      Version: 3.1.8
+      Author: Microsoft
+    Templates:
+      Protocol Buffer File (proto)
+      Razor Component (razorcomponent) C#
+      Razor Page (page) C#
+      MVC ViewImports (viewimports) C#
+      MVC ViewStart (viewstart) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Web.ItemTemplates
+
+  Microsoft.DotNet.Web.Spa.ProjectTemplates.3.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Web.Spa.ProjectTemplates.3.1
+      Version: 3.1.8
+      Author: Microsoft
+    Templates:
+      ASP.NET Core with Angular (angular) C#
+      ASP.NET Core with React.js (react) C#
+      ASP.NET Core with React.js and Redux (reactredux) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Web.Spa.ProjectTemplates.3.1
+
+  Microsoft.Dotnet.WinForms.ProjectTemplates
+    Details:
+      NuGetPackageId: Microsoft.Dotnet.WinForms.ProjectTemplates
+      Version: 4.8.1-servicing.20412.5
+      Author: Microsoft
+    Templates:
+      Windows Forms (WinForms) Application (winforms) C#
+      Windows Forms (WinForms) Class library (winformslib) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.Dotnet.WinForms.ProjectTemplates
+
+  Microsoft.DotNet.Wpf.ProjectTemplates
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Wpf.ProjectTemplates
+      Version: 3.1.8-servicing.20412.3
+      Author: Microsoft
+    Templates:
+      WPF Application (wpf) C#
+      WPF Class library (wpflib) C#
+      WPF Custom Control Library (wpfcustomcontrollib) C#
+      WPF User Control Library (wpfusercontrollib) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Wpf.ProjectTemplates
+
+  NUnit3.DotNetNew.Template
+    Details:
+      NuGetPackageId: NUnit3.DotNetNew.Template
+      Version: 1.7.1
+      Author: akharlov
+    Templates:
+      NUnit 3 Test Project (nunit) C#
+      NUnit 3 Test Item (nunit-test) C#
+      NUnit 3 Test Project (nunit) F#
+      NUnit 3 Test Item (nunit-test) F#
+      NUnit 3 Test Project (nunit) VB
+      NUnit 3 Test Item (nunit-test) VB
+    Uninstall Command:
+      dotnet new -u NUnit3.DotNetNew.Template
+
+
+C:\Windows\system32>dotnet new --install Umbraco.Tools.Packages.Templates::0.2.5
+  Determining projects to restore...
+  Restored C:\Users\Nurhak.Kaya\.templateengine\dotnetcli\v3.1.402\scratch\restore.csproj (in 1.47 sec).
+
+Usage: new [options]
+
+Options:
+  -h, --help          Displays help for this command.
+  -l, --list          Lists templates containing the specified name. If no name is specified, lists all templates.
+  -n, --name          The name for the output being created. If no name is specified, the name of the current directory is used.
+  -o, --output        Location to place the generated output.
+  -i, --install       Installs a source or a template pack.
+  -u, --uninstall     Uninstalls a source or a template pack.
+  --nuget-source      Specifies a NuGet source to use during install.
+  --type              Filters templates based on available types. Predefined values are "project", "item" or "other".
+  --dry-run           Displays a summary of what would happen if the given command line were run if it would result in a template creation.
+  --force             Forces content to be generated even if it would change existing files.
+  -lang, --language   Filters templates based on language and specifies the language of the template to create.
+  --update-check      Check the currently installed template packs for updates.
+  --update-apply      Check the currently installed template packs for update, and install the updates.
+
+
+Templates                                         Short Name                   Language          Tags
+--------------------------------------------------------------------------------------------------------------------------------------
+Console Application                               console                      [C#], F#, VB      Common/Console
+Class library                                     classlib                     [C#], F#, VB      Common/Library
+WPF Application                                   wpf                          [C#]              Common/WPF
+WPF Class library                                 wpflib                       [C#]              Common/WPF
+WPF Custom Control Library                        wpfcustomcontrollib          [C#]              Common/WPF
+WPF User Control Library                          wpfusercontrollib            [C#]              Common/WPF
+Windows Forms (WinForms) Application              winforms                     [C#]              Common/WinForms
+Windows Forms (WinForms) Class library            winformslib                  [C#]              Common/WinForms
+Worker Service                                    worker                       [C#]              Common/Worker/Web
+Unit Test Project                                 mstest                       [C#], F#, VB      Test/MSTest
+NUnit 3 Test Project                              nunit                        [C#], F#, VB      Test/NUnit
+NUnit 3 Test Item                                 nunit-test                   [C#], F#, VB      Test/NUnit
+xUnit Test Project                                xunit                        [C#], F#, VB      Test/xUnit
+Razor Component                                   razorcomponent               [C#]              Web/ASP.NET
+Razor Page                                        page                         [C#]              Web/ASP.NET
+MVC ViewImports                                   viewimports                  [C#]              Web/ASP.NET
+MVC ViewStart                                     viewstart                    [C#]              Web/ASP.NET
+Blazor Server App                                 blazorserver                 [C#]              Web/Blazor
+Blazor WebAssembly App                            blazorwasm                   [C#]              Web/Blazor/WebAssembly
+ASP.NET Core Empty                                web                          [C#], F#          Web/Empty
+ASP.NET Core Web App (Model-View-Controller)      mvc                          [C#], F#          Web/MVC
+ASP.NET Core Web App                              webapp                       [C#]              Web/MVC/Razor Pages
+ASP.NET Core with Angular                         angular                      [C#]              Web/MVC/SPA
+ASP.NET Core with React.js                        react                        [C#]              Web/MVC/SPA
+ASP.NET Core with React.js and Redux              reactredux                   [C#]              Web/MVC/SPA
+Razor Class Library                               razorclasslib                [C#]              Web/Razor/Library/Razor Class Library
+Umbraco Dashboard Item                            umbraco-v8-dashboard         [C#]              Web/Umbraco/v8
+Umbraco Github build script                       umbraco-v8-github-build      [C#]              Web/Umbraco/v8
+Empty Umbraco Package                             umbraco-v8-package           [C#]              Web/Umbraco/v8
+Empty Umbraco Site                                umbraco-v8-site              [C#]              Web/Umbraco/v8
+ASP.NET Core Web API                              webapi                       [C#], F#          Web/WebAPI
+ASP.NET Core gRPC Service                         grpc                         [C#]              Web/gRPC
+dotnet gitignore file                             gitignore                                      Config
+global.json file                                  globaljson                                     Config
+NuGet Config                                      nugetconfig                                    Config
+Dotnet local tool manifest file                   tool-manifest                                  Config
+Web Config                                        webconfig                                      Config
+Solution File                                     sln                                            Solution
+Protocol Buffer File                              proto                                          Web/gRPC
+
+Examples:
+    dotnet new mvc --auth Individual
+    dotnet new nunit -f net472
+    dotnet new --help
+
+C:\Windows\system32>dotnet new -u
+Template Instantiation Commands for .NET Core CLI
+
+Currently installed items:
+  Microsoft.DotNet.Common.ProjectTemplates.3.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.3.1
+      Version: 3.1.8
+      Author: Microsoft
+    Templates:
+      Class library (classlib) C#
+      Class library (classlib) F#
+      Class library (classlib) VB
+      Console Application (console) C#
+      Console Application (console) F#
+      Console Application (console) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ProjectTemplates.3.1
+
+  Microsoft.DotNet.Common.ProjectTemplates.2.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ProjectTemplates.2.1
+      Version: 1.0.2-beta3
+      Author: Microsoft
+    Templates:
+      Class library (classlib) C#
+      Class library (classlib) F#
+      Class library (classlib) VB
+      Console Application (console) C#
+      Console Application (console) F#
+      Console Application (console) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ProjectTemplates.2.1
+
+  Microsoft.DotNet.Test.ProjectTemplates.2.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Test.ProjectTemplates.2.1
+      Version: 1.0.2-beta4.20105.2
+      Author: Microsoft
+    Templates:
+      Unit Test Project (mstest) C#
+      Unit Test Project (mstest) F#
+      Unit Test Project (mstest) VB
+      xUnit Test Project (xunit) C#
+      xUnit Test Project (xunit) F#
+      xUnit Test Project (xunit) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Test.ProjectTemplates.2.1
+
+  Microsoft.DotNet.Web.ProjectTemplates.3.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Web.ProjectTemplates.3.1
+      Version: 3.1.8
+      Author: Microsoft
+    Templates:
+      Blazor Server App (blazorserver) C#
+      ASP.NET Core Empty (web) C#
+      ASP.NET Core Empty (web) F#
+      ASP.NET Core gRPC Service (grpc) C#
+      Razor Class Library (razorclasslib) C#
+      ASP.NET Core Web App (webapp) C#
+      ASP.NET Core Web App (Model-View-Controller) (mvc) C#
+      ASP.NET Core Web App (Model-View-Controller) (mvc) F#
+      ASP.NET Core Web API (webapi) C#
+      ASP.NET Core Web API (webapi) F#
+      Worker Service (worker) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Web.ProjectTemplates.3.1
+
+  Microsoft.DotNet.Web.ProjectTemplates.2.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Web.ProjectTemplates.2.1
+      Version: 2.1.14
+      Author: Microsoft
+    Templates:
+      ASP.NET Core Empty (web) C#
+      ASP.NET Core Empty (web) F#
+      Razor Class Library (razorclasslib) C#
+      ASP.NET Core Web App (razor) C#
+      ASP.NET Core Web App (Model-View-Controller) (mvc) C#
+      ASP.NET Core Web App (Model-View-Controller) (mvc) F#
+      ASP.NET Core Web API (webapi) C#
+      ASP.NET Core Web API (webapi) F#
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Web.ProjectTemplates.2.1
+
+  Microsoft.DotNet.Web.Spa.ProjectTemplates.2.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Web.Spa.ProjectTemplates.2.1
+      Version: 2.1.14
+      Author: Microsoft
+    Templates:
+      ASP.NET Core with Angular (angular) C#
+      ASP.NET Core with React.js (react) C#
+      ASP.NET Core with React.js and Redux (reactredux) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Web.Spa.ProjectTemplates.2.1
+
+  Microsoft.AspNetCore.Components.WebAssembly.Templates
+    Details:
+      NuGetPackageId: Microsoft.AspNetCore.Components.WebAssembly.Templates
+      Version: 3.2.1
+      Author: Microsoft
+    Templates:
+      Blazor WebAssembly App (blazorwasm) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.AspNetCore.Components.WebAssembly.Templates
+
+  Microsoft.DotNet.Common.ItemTemplates
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Common.ItemTemplates
+      Version: 3.1.8
+      Author: Microsoft
+    Templates:
+      dotnet gitignore file (gitignore)
+      global.json file (globaljson)
+      NuGet Config (nugetconfig)
+      Solution File (sln)
+      Dotnet local tool manifest file (tool-manifest)
+      Web Config (webconfig)
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Common.ItemTemplates
+
+  Microsoft.DotNet.Test.ProjectTemplates.3.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Test.ProjectTemplates.3.1
+      Version: 1.0.2-beta4.20176.1
+      Author: Microsoft
+    Templates:
+      Unit Test Project (mstest) C#
+      Unit Test Project (mstest) F#
+      Unit Test Project (mstest) VB
+      xUnit Test Project (xunit) C#
+      xUnit Test Project (xunit) F#
+      xUnit Test Project (xunit) VB
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Test.ProjectTemplates.3.1
+
+  Microsoft.DotNet.Web.ItemTemplates
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Web.ItemTemplates
+      Version: 3.1.8
+      Author: Microsoft
+    Templates:
+      Protocol Buffer File (proto)
+      Razor Component (razorcomponent) C#
+      Razor Page (page) C#
+      MVC ViewImports (viewimports) C#
+      MVC ViewStart (viewstart) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Web.ItemTemplates
+
+  Microsoft.DotNet.Web.Spa.ProjectTemplates.3.1
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Web.Spa.ProjectTemplates.3.1
+      Version: 3.1.8
+      Author: Microsoft
+    Templates:
+      ASP.NET Core with Angular (angular) C#
+      ASP.NET Core with React.js (react) C#
+      ASP.NET Core with React.js and Redux (reactredux) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Web.Spa.ProjectTemplates.3.1
+
+  Microsoft.Dotnet.WinForms.ProjectTemplates
+    Details:
+      NuGetPackageId: Microsoft.Dotnet.WinForms.ProjectTemplates
+      Version: 4.8.1-servicing.20412.5
+      Author: Microsoft
+    Templates:
+      Windows Forms (WinForms) Application (winforms) C#
+      Windows Forms (WinForms) Class library (winformslib) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.Dotnet.WinForms.ProjectTemplates
+
+  Microsoft.DotNet.Wpf.ProjectTemplates
+    Details:
+      NuGetPackageId: Microsoft.DotNet.Wpf.ProjectTemplates
+      Version: 3.1.8-servicing.20412.3
+      Author: Microsoft
+    Templates:
+      WPF Application (wpf) C#
+      WPF Class library (wpflib) C#
+      WPF Custom Control Library (wpfcustomcontrollib) C#
+      WPF User Control Library (wpfusercontrollib) C#
+    Uninstall Command:
+      dotnet new -u Microsoft.DotNet.Wpf.ProjectTemplates
+
+  NUnit3.DotNetNew.Template
+    Details:
+      NuGetPackageId: NUnit3.DotNetNew.Template
+      Version: 1.7.1
+      Author: akharlov
+    Templates:
+      NUnit 3 Test Project (nunit) C#
+      NUnit 3 Test Item (nunit-test) C#
+      NUnit 3 Test Project (nunit) F#
+      NUnit 3 Test Item (nunit-test) F#
+      NUnit 3 Test Project (nunit) VB
+      NUnit 3 Test Item (nunit-test) VB
+    Uninstall Command:
+      dotnet new -u NUnit3.DotNetNew.Template
+
+  Umbraco.Tools.Packages.Templates
+    Details:
+      NuGetPackageId: Umbraco.Tools.Packages.Templates
+      Version: 0.2.5
+      Author: UmbracoPackageTeam
+    Templates:
+      Empty Umbraco Package (umbraco-v8-package) C#
+      Empty Umbraco Site (umbraco-v8-site) C#
+      Umbraco Dashboard Item (umbraco-v8-dashboard) C#
+      Umbraco Github build script (umbraco-v8-github-build) C#
+    Uninstall Command:
+      dotnet new -u Umbraco.Tools.Packages.Templates
+
+
+C:\Windows\system32>dotnet new umbraco-v8-package -h
+Usage: new [options]
+
+Options:
+  -h, --help          Displays help for this command.
+  -l, --list          Lists templates containing the specified name. If no name is specified, lists all templates.
+  -n, --name          The name for the output being created. If no name is specified, the name of the current directory is used.
+  -o, --output        Location to place the generated output.
+  -i, --install       Installs a source or a template pack.
+  -u, --uninstall     Uninstalls a source or a template pack.
+  --nuget-source      Specifies a NuGet source to use during install.
+  --type              Filters templates based on available types. Predefined values are "project", "item" or "other".
+  --dry-run           Displays a summary of what would happen if the given command line were run if it would result in a template creation.
+  --force             Forces content to be generated even if it would change existing files.
+  -lang, --language   Filters templates based on language and specifies the language of the template to create.
+  --update-check      Check the currently installed template packs for updates.
+  --update-apply      Check the currently installed template packs for update, and install the updates.
+
+
+Empty Umbraco Package (C#)
+Author: UmbracoPackageTeam
+Description: Basic umbraco package project template
+Options:
+  -d|--dashboard       Include template code for a dashboard
+                       bool - Optional
+                       Default: false / (*) true
+
+  -p|--propertyEditor  Include template code for a property Type Editor
+                       bool - Optional
+                       Default: false / (*) true
+
+  -g|--github          Include the GitHub Actions in the project.
+                       bool - Optional
+                       Default: true
+
+  -t|--testsite        Include the test umbraco site project in .website
+                       bool - Optional
+                       Default: true
+
+  -r|--restore         Restore NuGet and NPM Modules
+                       bool - Optional
+                       Default: false / (*) true
+
+
+* Indicates the value used if the switch is provided without a value.
+
+C:\Windows\system32>cd e:
+E:\
+
+C:\Windows\system32>cd git
+The system cannot find the path specified.
+
+C:\Windows\system32>e:
+
+E:\>cd git\repos
+
+E:\git\repos>dotnet new umbraco-v8-package -h
+Usage: new [options]
+
+Options:
+  -h, --help          Displays help for this command.
+  -l, --list          Lists templates containing the specified name. If no name is specified, lists all templates.
+  -n, --name          The name for the output being created. If no name is specified, the name of the current directory is used.
+  -o, --output        Location to place the generated output.
+  -i, --install       Installs a source or a template pack.
+  -u, --uninstall     Uninstalls a source or a template pack.
+  --nuget-source      Specifies a NuGet source to use during install.
+  --type              Filters templates based on available types. Predefined values are "project", "item" or "other".
+  --dry-run           Displays a summary of what would happen if the given command line were run if it would result in a template creation.
+  --force             Forces content to be generated even if it would change existing files.
+  -lang, --language   Filters templates based on language and specifies the language of the template to create.
+  --update-check      Check the currently installed template packs for updates.
+  --update-apply      Check the currently installed template packs for update, and install the updates.
+
+
+Empty Umbraco Package (C#)
+Author: UmbracoPackageTeam
+Description: Basic umbraco package project template
+Options:
+  -d|--dashboard       Include template code for a dashboard
+                       bool - Optional
+                       Default: false / (*) true
+
+  -p|--propertyEditor  Include template code for a property Type Editor
+                       bool - Optional
+                       Default: false / (*) true
+
+  -g|--github          Include the GitHub Actions in the project.
+                       bool - Optional
+                       Default: true
+
+  -t|--testsite        Include the test umbraco site project in .website
+                       bool - Optional
+                       Default: true
+
+  -r|--restore         Restore NuGet and NPM Modules
+                       bool - Optional
+                       Default: false / (*) true
+
+
+* Indicates the value used if the switch is provided without a value.
+
+E:\git\repos>dotnet new umbraco-v8-package -n PackageWorkshop -d
+The template "Empty Umbraco Package" was created successfully.
+
+E:\git\repos>cd PackageWorkshop
+
+E:\git\repos\PackageWorkshop>npm install
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+added 334 packages from 227 contributors and audited 335 packages in 29.951s
+found 0 vulnerabilities
+
+
+E:\git\repos\PackageWorkshop>npm install gulp -g
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+C:\Users\Nurhak.Kaya\AppData\Roaming\npm\gulp -> C:\Users\Nurhak.Kaya\AppData\Roaming\npm\node_modules\gulp\bin\gulp.js
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules\gulp\node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ gulp@4.0.2
+added 143 packages from 86 contributors, removed 63 packages and updated 24 packages in 33.063s
+
+E:\git\repos\PackageWorkshop>gulp
+[12:05:51] Using gulpfile E:\git\repos\PackageWorkshop\gulpfile.js
+[12:05:51] Starting 'default'...
+
+Watching : src/PackageWorkshop/App_Plugins/PackageWorkshop/**/*
+Target   : .website/App_Plugins/PackageWorkshop
+copy: src\PackageWorkshop\App_Plugins\PackageWorkshop\package.manifest .website/App_Plugins/PackageWorkshop
+copy: src\PackageWorkshop\App_Plugins\PackageWorkshop\Dashboard\dashboard.html .website/App_Plugins/PackageWorkshop
+copy: src\PackageWorkshop\App_Plugins\PackageWorkshop\Dashboard\dashboardController.js .website/App_Plugins/PackageWorkshop
+copy: src\PackageWorkshop\App_Plugins\PackageWorkshop\Dashboard\dashboardService.js .website/App_Plugins/PackageWorkshop
+copy: src\PackageWorkshop\App_Plugins\PackageWorkshop\Dashboard\package.manifest .website/App_Plugins/PackageWorkshop
+copy: src\PackageWorkshop\App_Plugins\PackageWorkshop\Dashboard\Lang\en.xml .website/App_Plugins/PackageWorkshop
+
+
+**** GitBash changes ****
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e
+$ cd git/repos/PackageWorkshop/
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop
+$ git init
+Initialized empty Git repository in E:/git/repos/PackageWorkshop/.git/
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitattributes
+        .github/
+        .gitignore
+        LICENSE
+        PackageWorkshop.sln
+        gulpfile.js
+        package-lock.json
+        package.json
+        package.xml
+        paths.json
+        readme.md
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (master)
+$ git checkout -b main
+Switched to a new branch 'main'
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git add .
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git status
+On branch main
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitattributes
+        new file:   .github/workflows/build.yml
+        new file:   .github/workflows/readme.md
+        new file:   .gitignore
+        new file:   LICENSE
+        new file:   PackageWorkshop.sln
+        new file:   gulpfile.js
+        new file:   package-lock.json
+        new file:   package.json
+        new file:   package.xml
+        new file:   paths.json
+        new file:   readme.md
+        new file:   src/PackageWorkshop.sln
+        new file:   src/PackageWorkshop/App_Plugins/PackageWorkshop/Dashboard/Lang/en.xml
+        new file:   src/PackageWorkshop/App_Plugins/PackageWorkshop/Dashboard/dashboard.html
+        new file:   src/PackageWorkshop/App_Plugins/PackageWorkshop/Dashboard/dashboardController.js
+        new file:   src/PackageWorkshop/App_Plugins/PackageWorkshop/Dashboard/dashboardService.js
+        new file:   src/PackageWorkshop/App_Plugins/PackageWorkshop/Dashboard/package.manifest
+        new file:   src/PackageWorkshop/App_Plugins/PackageWorkshop/package.manifest
+        new file:   src/PackageWorkshop/Controllers/DashboardComponent.cs
+        new file:   src/PackageWorkshop/Controllers/DashboardController.cs
+        new file:   src/PackageWorkshop/PackageWorkshop.csproj
+
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git commit -m "initial commit, dashboard package"
+[main (root-commit) 9508c56] initial commit, dashboard package
+ 22 files changed, 3942 insertions(+)
+ create mode 100644 .gitattributes
+ create mode 100644 .github/workflows/build.yml
+ create mode 100644 .github/workflows/readme.md
+ create mode 100644 .gitignore
+ create mode 100644 LICENSE
+ create mode 100644 PackageWorkshop.sln
+ create mode 100644 gulpfile.js
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 package.xml
+ create mode 100644 paths.json
+ create mode 100644 readme.md
+ create mode 100644 src/PackageWorkshop.sln
+ create mode 100644 src/PackageWorkshop/App_Plugins/PackageWorkshop/Dashboard/Lang/en.xml
+ create mode 100644 src/PackageWorkshop/App_Plugins/PackageWorkshop/Dashboard/dashboard.html
+ create mode 100644 src/PackageWorkshop/App_Plugins/PackageWorkshop/Dashboard/dashboardController.js
+ create mode 100644 src/PackageWorkshop/App_Plugins/PackageWorkshop/Dashboard/dashboardService.js
+ create mode 100644 src/PackageWorkshop/App_Plugins/PackageWorkshop/Dashboard/package.manifest
+ create mode 100644 src/PackageWorkshop/App_Plugins/PackageWorkshop/package.manifest
+ create mode 100644 src/PackageWorkshop/Controllers/DashboardComponent.cs
+ create mode 100644 src/PackageWorkshop/Controllers/DashboardController.cs
+ create mode 100644 src/PackageWorkshop/PackageWorkshop.csproj
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git remote add origin git@github.com:NurhakKaya/PackageWorkshop.git
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git branch -m main
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git push -u origin main
+Enter passphrase for key '/c/Users/Nurhak.Kaya/.ssh/id_rsa':
+Counting objects: 33, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (33/33), 35.41 KiB | 0 bytes/s, done.
+Total 33 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:NurhakKaya/PackageWorkshop.git
+ * [new branch]      main -> main
+Branch main set up to track remote branch main from origin.
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$
