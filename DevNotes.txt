@@ -1125,3 +1125,79 @@ Uploading PackageWorkshop_2.0.0.zip to our.umbraco.com ...
 The package 'PackageWorkshop_2.0.0.zip' was successfully uploaded to our.umbraco.com
 
 E:\git\repos\PackageWorkshop>
+
+
+**** using build.yml to trigger a build ****
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .github/workflows/build.yml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git add -A
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .github/workflows/build.yml
+
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git commit -m "build.yml update for umbpack push"
+[main 7ed6372] build.yml update for umbpack push
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git push
+Enter passphrase for key '/c/Users/Nurhak.Kaya/.ssh/id_rsa':
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 445 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:NurhakKaya/PackageWorkshop.git
+   f0951e2..7ed6372  main -> main
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git status
+On branch main
+Your branch is up-to-date with 'origin/main'.
+nothing to commit, working tree clean
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git tag release/1.0.0
+
+Nurhak.Kaya@NURHAK-DEV MINGW64 /e/git/repos/PackageWorkshop (main)
+$ git push origin release/1.0.0
+Enter passphrase for key '/c/Users/Nurhak.Kaya/.ssh/id_rsa':
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:NurhakKaya/PackageWorkshop.git
+ * [new tag]         release/1.0.0 -> release/1.0.0
+
