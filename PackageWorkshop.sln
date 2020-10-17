@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackageWorkshop", "src\Pack
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{F5B082BF-2E3D-45B4-9055-A119E0F5BE56}"
 	ProjectSection(SolutionItems) = preProject
+		DemoImage.PNG = DemoImage.PNG
 		DevNotes.txt = DevNotes.txt
+		NurhakFirstUmbracoPackage.PNG = NurhakFirstUmbracoPackage.PNG
 	EndProjectSection
 EndProject
 Global
